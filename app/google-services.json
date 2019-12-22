@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207279311253",
+    "firebase_url": "https://takeflowers3.firebaseio.com",
+    "project_id": "takeflowers3",
+    "storage_bucket": "takeflowers3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207279311253:android:d89a172ee55bd4e68c4e9c",
+        "android_client_info": {
+          "package_name": "com.example.takeflowers3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207279311253-ndb84rvov8lfbro733airer5fju5f8tg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.takeflowers3",
+            "certificate_hash": "fb65bada6f75a4dd86d11f527f57fcc4eb533663"
+          }
+        },
+        {
+          "client_id": "207279311253-hscc63jl8t4fc4mtpro1jb7o69c1ogn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6D4KRxu_ukNOtk4BaRloyeP9K-ZZQm6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207279311253-hscc63jl8t4fc4mtpro1jb7o69c1ogn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

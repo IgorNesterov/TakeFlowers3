@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TakeFlowers3</string>
+    <string name="loginButton_name">Войти</string>
+    <string name="password_name">Пароль</string>
+    <string name="mailName_name">Войти</string>
+    <string name="telephoneLabel">Телефон</string>
+    <string name="addressLabel">Aдрес</string>
+    <string name="toMapButton">Как добраться</string>
+    <string name="callButton">Позвонить</string>
+    <string name="toListButton">Выбрать магазин</string>
+
+    <string name="nameText">Название</string>
+    <string name="telephoneText">номер телефона</string>
+    <string name="addressText">адрес магазина</string>
+</resources>
+
