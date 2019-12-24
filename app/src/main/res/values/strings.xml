@@ -12,5 +12,6 @@
     <string name="nameText">Название</string>
     <string name="telephoneText">номер телефона</string>
     <string name="addressText">адрес магазина</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
 

@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
+public class MainActivityTest {
     @Rule
     public ActivityTestRule<ElementActivity> activityActivityTestRule = new ActivityTestRule<>(ElementActivity.class);
 
@@ -35,6 +35,12 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void test1(){
-        onView(withId(R.id.nameTxet)).check(matches(isDisplayed()));
+        onView(withId(R.id.mailText)).check(matches(isDisplayed()));
+    }
+    public void test2(){
+        onView(withId(R.id.loginButton)).check(matches(isDisplayed()));
+    }
+    public void test3(){
+        onView(withId(R.id.toListButton)).check(matches(isDisplayed()));
     }
 }
