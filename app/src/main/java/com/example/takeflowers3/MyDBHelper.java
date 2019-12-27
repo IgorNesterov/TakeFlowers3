@@ -14,7 +14,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "SQLite";
     private static final String DATABASE_NAME = "DataBase.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
     public MyDBHelper(Context context)  {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -29,7 +29,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        Log.i(TAG, "MyDBHelper.onCreate ... ");
+        //Log.i(TAG, "MyDBHelper.onCreate ... ");
         // Script to create table.
         String script = "CREATE TABLE " + TABLE_NAME + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_NAME + " TEXT," + COLUMN_ADDRESS + " TEXT,"
@@ -54,22 +54,16 @@ public class MyDBHelper extends SQLiteOpenHelper {
     public void createDefaultShopsIfNeed()  {
         int count = this.getShopsCount();
         if(count ==0 ) {
-            Shop shop1 = new Shop("Твой букет","w","2",1);
-            Shop shop2 = new Shop("Анемон","2","3",1);
-            Shop shop3 = new Shop("Самцветок","3","1",2);
-            Shop shop4 = new Shop("Flowers","4","5",2);
-            Shop shop5 = new Shop("Бутоника","8","1",1);
-            Shop shop6 = new Shop("101 цветок","0","6",2);
-            Shop shop7 = new Shop("1001 роза","3","9",1);
-            Shop shop8 = new Shop("ROSE BAR","a","0",1);
+            Shop shop1 = new Shop("Твой букет","ул. Красноармейская 5","89277071234",1);
+            Shop shop2 = new Shop("Анемон","Московское ш. 10","89277071934",1);
+            Shop shop3 = new Shop("Самцветок","ул. Фрунзе 15","89277072234",0);
+            Shop shop4 = new Shop("Flowers","ул. Фрунзе 4","89277079234",0);
+            Shop shop5 = new Shop("Бутоника","ул. Ново-садовая 8","89277071200",1);
             this.addShop(shop1);
             this.addShop(shop2);
             this.addShop(shop3);
             this.addShop(shop4);
             this.addShop(shop5);
-            this.addShop(shop6);
-            this.addShop(shop7);
-            this.addShop(shop8);
         }
     }
 
